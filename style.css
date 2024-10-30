@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* shared style */
+body{
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    letter-spacing: 0%;
+    margin: 2% 7%;
+}
+.section-parent{
+    text-align: center;
+    display: grid;
+    gap: 5%;
+    margin-top: 7%;
+}
+.section-title{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.sub-title{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.text-primary{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn-primary{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+}
+/* header style */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    gap: 3rem;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.logo{
+    color: rgb(230, 83, 60);
+    font-size: 36px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif, cursive;
+}
+.Home{
+    width: 95px;
+    height: 40px;
+    padding: 8px 20px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+}
+.menubar{
+    display: none;
+}
+/* banner style */
+.banner{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+.banner-child{
+    display: grid;
+    gap: 12%;
+}
+.banner-title{
+    font-size: 5rem;
+}
+.shape{
+    font-family: "Great Vibes";
+}
+.download{
+    border: 1px solid rgb(255, 255, 255);
+    background: none;
+}
+.banner-btn{
+    display: flex;
+    gap: 3%;
+}
+.circle{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle img{
+    width: 40%;
+}
+.sticker{
+    width: 12.5rem;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    position: absolute;
+    top: 60%;
+    right: 25%;
+}
+.sticker-2{
+    top: 32%;
+    right: 5%;
+}
+.sticker-num{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.sticker-2 .sticker-num{
+    font-size: 2.5rem;
+}
+/* habit style */
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.habit-card{
+    width: 230px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habit-card img{
+    border-radius: 100px;
+}
+.habit-card p{
+    text-align: center;
+}
+/* run style */
+.run{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 3%;
+    margin-top: 15%;
+}
+.run img{
+    width: 40%;
+    border-radius: 20px;
+}
+/* team style */
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+}
+.team-member{
+    position: relative;
+}
+.team{
+    width: 100%;
+    height: 290px;
+    border-radius: 18px;
+    opacity: 0.7;
+}
+.trainer-name{
+    text-align: left;
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+}
+/* footer style */
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+.footer-div{
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+.footer-ul{
+    color: rgba(255, 255, 255, 0.5);;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 576px){
+    /* header style */
+    .navbar{
+        display: none;
+    }
+    .menubar{
+        display: block;
+        color: white;
+        font-size: x-large;
+    }
+    .banner,
+    .run,
+    .team-container
+    {
+        display: block;
+    }
+    .banner-img{
+        width: 100%;
+        margin-top: 30%;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+    .sticker{
+        top: 90%;
+        right: 5%;
+        display: none;
+    }
+    .sticker-2{
+        top: 76%;
+        right: 5%;
+    }
+    .sticker-num{
+        font-size: 1rem;
+    }
+    .sticker-2 .sticker-num{
+        font-size: 2rem;
+    }
+    .container{
+        display: grid;
+        gap: 5%;
+    }
+    .run{
+        display: grid;
+        height: 600px;
+        margin-top: 130%;
+        padding: 7%;
+    }
+    .run img{
+        width: 100%;
+    }
+    .run .btn-primary{
+        width: 100%;
+    }
+    .team{
+        width: 90%;
+        height: 200px;
+    }
+}
