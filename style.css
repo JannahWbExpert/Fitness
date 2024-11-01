@@ -4,7 +4,8 @@
 body{
     font-family: "Inter", sans-serif;
     background-color: black;
-    letter-spacing: 0%;
+}
+header, main{
     margin: 2% 7%;
 }
 .section-parent{
@@ -136,8 +137,10 @@ body{
 }
 /* habit style */
 .container{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+    justify-items: center;
 }
 .habit-card{
     width: 230px;
@@ -154,7 +157,8 @@ body{
 }
 /* run style */
 .run{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: left;
     border-radius: 18px;
@@ -163,7 +167,7 @@ body{
     margin-top: 15%;
 }
 .run img{
-    width: 40%;
+    width: 100%;
     border-radius: 20px;
 }
 /* team style */
@@ -175,9 +179,9 @@ body{
 .team-member{
     position: relative;
 }
-.team{
+.trainer{
     width: 100%;
-    height: 290px;
+    height: 100%;
     border-radius: 18px;
     opacity: 0.7;
 }
@@ -189,18 +193,41 @@ body{
 }
 /* footer style */
 footer{
-    display: grid;
+    background: rgba(255, 255, 255, 0.1);    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
+    gap: 10%;
+    justify-content: space-around;
+    margin: 15% 0% 0%;
+    padding: 5% 5% 15%;
+    position: relative;
 }
 .footer-div{
     color: white;
     font-size: 32px;
     font-weight: 700;
 }
-.footer-ul{
+.footer-a{
+    display: grid;
+    gap: 12%;
+}
+.footer-a a{
+    text-decoration: none;
     color: rgba(255, 255, 255, 0.5);;
-    flex-direction: column;
+}
+hr {
+    position: absolute;
+    width: 90%;
+    bottom: 20%;
+    left: 5%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.right-reserved{
+    position: absolute;
+    width: 90%;
+    bottom: 8%;
+    left: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 576px){
@@ -214,8 +241,7 @@ footer{
         font-size: x-large;
     }
     .banner,
-    .run,
-    .team-container
+    footer
     {
         display: block;
     }
@@ -241,24 +267,29 @@ footer{
     .sticker-2 .sticker-num{
         font-size: 2rem;
     }
-    .container{
-        display: grid;
-        gap: 5%;
-    }
     .run{
-        display: grid;
         height: 600px;
-        margin-top: 130%;
+        margin-top: 105%;
         padding: 7%;
-    }
-    .run img{
-        width: 100%;
     }
     .run .btn-primary{
         width: 100%;
     }
-    .team{
-        width: 90%;
-        height: 200px;
+    .container,
+    .run,
+    .team-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3%;
+        justify-content: space-evenly;
+    }
+    footer{
+        margin-top: 145%;
+        padding: 5% 5% 35%;
+    }
+    hr{
+        bottom: 8%;
+    }
+    .right-reserved{
+        bottom: 2%;
     }
 }
