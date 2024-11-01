@@ -10,7 +10,6 @@ header, main{
 }
 .section-parent{
     text-align: center;
-    display: grid;
     gap: 5%;
     margin-top: 7%;
 }
@@ -37,6 +36,7 @@ header, main{
     border: none;
     border-radius: 42px;
     background: rgb(230, 83, 60);
+    cursor: pointer;
 }
 /* header style */
 .nav{
@@ -109,8 +109,8 @@ header, main{
     width: 40%;
 }
 .sticker{
-    width: 12.5rem;
-    height: auto;
+    width: 15%;
+    height: 9%;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
@@ -124,6 +124,7 @@ header, main{
     right: 25%;
 }
 .sticker-2{
+    height: 12%;
     top: 32%;
     right: 5%;
 }
@@ -171,6 +172,7 @@ header, main{
     border-radius: 20px;
 }
 /* team style */
+.package-container,
 .team-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -190,6 +192,15 @@ header, main{
     position: absolute;
     bottom: 3%;
     left: 10%;
+}
+/* package style */
+.package{
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+    background: rgb(40, 40, 40);
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px 0px rgb(245, 108, 108);
 }
 /* footer style */
 footer{
@@ -231,7 +242,6 @@ hr {
 }
 
 @media screen and (max-width: 576px){
-    /* header style */
     .navbar{
         display: none;
     }
@@ -253,13 +263,15 @@ hr {
         font-size: 3rem;
     }
     .sticker{
-        top: 90%;
-        right: 5%;
-        display: none;
+        width: 52%;
+        height: 8%;
+        top: 110%;
+        left: 5%;
     }
     .sticker-2{
-        top: 76%;
-        right: 5%;
+        height: 10%;
+        top: 87%;
+        left: 45%;
     }
     .sticker-num{
         font-size: 1rem;
@@ -269,7 +281,7 @@ hr {
     }
     .run{
         height: 600px;
-        margin-top: 105%;
+        margin-top: 50%;
         padding: 7%;
     }
     .run .btn-primary{
@@ -277,13 +289,20 @@ hr {
     }
     .container,
     .run,
-    .team-container{
+    .team-container,
+    .package-container{
         grid-template-columns: repeat(1, 1fr);
         gap: 3%;
         justify-content: space-evenly;
     }
+    .package-section{
+        margin-top: 100%;
+    }
+    .package{
+        width: 90%;
+    }
     footer{
-        margin-top: 145%;
+        margin-top: 85%;
         padding: 5% 5% 35%;
     }
     hr{
