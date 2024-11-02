@@ -10,7 +10,6 @@ header, main{
 }
 .section-parent{
     text-align: center;
-    gap: 5%;
     margin-top: 7%;
 }
 .section-title{
@@ -76,6 +75,7 @@ header, main{
     display: flex;
     align-items: center;
     gap: 8rem;
+    position: relative;
 }
 .banner-child{
     display: grid;
@@ -109,8 +109,8 @@ header, main{
     width: 40%;
 }
 .sticker{
-    width: 15%;
-    height: 9%;
+    width: 18%;
+    height: 14%;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
@@ -120,13 +120,13 @@ header, main{
     align-items: center;
     gap: 5%;
     position: absolute;
-    top: 60%;
-    right: 25%;
+    top: 70%;
+    right: 18%;
 }
 .sticker-2{
-    height: 12%;
+    height: 18%;
     top: 32%;
-    right: 5%;
+    right: 2%;
 }
 .sticker-num{
     color: white;
@@ -171,7 +171,46 @@ header, main{
     width: 100%;
     border-radius: 20px;
 }
-/* team style */
+/* BMI style */
+table {
+    width: 120%;
+    height: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 30px;
+    text-align: left;
+}
+tr:hover {
+    background-color: gray;
+}
+.BMI-intro{
+    width: 60%;
+    margin: 5% 20%;
+    text-align: justify;
+}
+.BMI{
+    display: flex;
+    gap: 15%;
+}
+.BMI-chart{
+    width: 80%;
+}
+.calculator{
+    display: grid;
+    gap: 5%;
+}
+.calculator input{
+    width: 20%;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+/* trainer style */
 .package-container,
 .team-container{
     display: grid;
@@ -180,6 +219,9 @@ header, main{
 }
 .team-member{
     position: relative;
+}
+.trainer-parent{
+    margin-top: 15%;
 }
 .trainer{
     width: 100%;
@@ -251,6 +293,7 @@ hr {
         font-size: x-large;
     }
     .banner,
+    .BMI,
     footer
     {
         display: block;
@@ -263,15 +306,15 @@ hr {
         font-size: 3rem;
     }
     .sticker{
-        width: 52%;
+        width: 62%;
         height: 8%;
-        top: 110%;
-        left: 5%;
+        top: 85%;
+        left: 3%;
     }
     .sticker-2{
         height: 10%;
-        top: 87%;
-        left: 45%;
+        top: 65%;
+        left: 40%;
     }
     .sticker-num{
         font-size: 1rem;
@@ -302,7 +345,7 @@ hr {
         width: 90%;
     }
     footer{
-        margin-top: 85%;
+        margin-top: 25%;
         padding: 5% 5% 35%;
     }
     hr{
