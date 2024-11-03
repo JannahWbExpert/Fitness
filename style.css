@@ -17,6 +17,10 @@ header, .banner, .section-parent{
     font-size: 3rem;
     font-weight: 900;
 }
+.section-description{
+    width: 50%;
+    margin: 2% 25%;
+}
 .sub-title{
     color: white;
     font-size: 18px;
@@ -207,6 +211,12 @@ tr:hover {
     display: grid;
     gap: 5%;
 }
+.input-container{
+    width: 100%;
+    display: flex;
+    gap: 3%;
+    position: relative;
+}
 .calculator input{
     width: 100%;
     padding: 18px 40px;
@@ -215,12 +225,13 @@ tr:hover {
     background: rgba(255, 255, 255, 0.2);
     outline: none;
 }
-.input-1{
-    display: flex;
-    gap: 3%;
+.input-icon{
+    position: absolute;
+    top: 35%;
+    right: 3%;
 }
-.input-2{
-    width: 86.5%;
+.input-icon1{
+    left: 41%;
 }
 .calculator button{
     width: 40%;
@@ -298,6 +309,7 @@ hr {
     justify-content: center;
 }
 
+
 @media screen and (max-width: 576px){
     .navbar{
         display: none;
@@ -342,7 +354,6 @@ hr {
         margin-top: 50%;
         padding: 7%;
     }
-    
     .run .btn-primary{
         width: 100%;
     }
@@ -363,9 +374,6 @@ hr {
     }
     .BMI-chart{
         width: 84%;
-    }
-    .input-2{
-        width: 70%;
     }
     .calculator button{
         width: 60%;
