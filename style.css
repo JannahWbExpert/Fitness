@@ -19,7 +19,7 @@ header, .banner, .section-parent{
 }
 .section-description{
     width: 50%;
-    margin: 2% 25%;
+    margin: 2% 25% 5%;
 }
 .sub-title{
     color: white;
@@ -144,12 +144,10 @@ header, .banner, .section-parent{
 .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5%;
     justify-items: center;
 }
 .habit-card{
     width: 230px;
-    height: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,9 +306,11 @@ hr {
     display: flex;
     justify-content: center;
 }
-
-
 @media screen and (max-width: 576px){
+    .section-description{
+        width: 100%;
+        margin: 2% 0% 10%;
+    }
     .navbar{
         display: none;
     }
